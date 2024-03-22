@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>RegEx</title>
+    <style>
+      textarea {
+        width: 30rem;
+        height: 8rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Sentiment Analyzer</h1>
+    <hr />
+    <form action="{{ url_for('predicted') }}" method="post">
+      <label for="Test-String">Enter your review:</label><br /><br />
+      <textarea
+        type="textarea"
+        name="Test-String"
+        placeholder="enter a review for the product eg: very good product"
+      ></textarea
+      ><br /><br />
+      <input type="submit" value="submit" />
+    </form>
+  </body>
+</html>
